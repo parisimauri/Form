@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Dati Personali</title>
+</head>
+<body>
+    <h1>Inserisci i tuoi dati personali:</h1>
+    <form id="personalDataForm">
+        <label for="Nome">Nome:</label>
+        <input type="text" id="Nome" required><br>
+
+        <label for="Cognome">Cognome:</label>
+        <input type="text" id="Cognome" required><br>
+
+        <label for="AnnoDiNascità">Anno di nascita:</label>
+        <input type="number" id="AnnoDiNascità" min="1900" max="2099" required><br>
+
+        <button type="button" onclick="calcolaEta()">Calcola Età</button>
+    </form>
+    <script src="Modulo.js"></script>
+</body>
+</html>
